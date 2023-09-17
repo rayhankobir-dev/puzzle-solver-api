@@ -9,11 +9,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Welcome, Puzzle solver API!');
 });
 
-app.post('/api/solve', async (req, res) => {
+app.post('/solve', async (req, res) => {
     const initialState = req.body.initialState;
     const solutionPath = solvePuzzle(initialState);
     const tree =  getIterationTree();
