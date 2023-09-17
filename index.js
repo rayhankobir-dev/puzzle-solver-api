@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     `);
 });
 
-app.post('/api/solve', async (req, res) => {
+app.post('/solve', async (req, res) => {
     const initialState = req.body.initialState;
     const solutionPath = solvePuzzle(initialState);
     const tree =  getIterationTree();
