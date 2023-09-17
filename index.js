@@ -10,7 +10,10 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Welcome, Puzzle solver API!');
+    res.send(`
+    <h1>Welcome, Puzzle solver API!</h1>
+    <p>Please read the documentation for API request</p>
+    `);
 });
 
 app.post('/solve', async (req, res) => {
