@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
     res.send(`
     <h1>Welcome, Puzzle solver API!</h1>
     <p>Please read the documentation for API request</p>
+    <a href="https://github.com/rajurayhan37/puzzle-solver-api/">Github<a/>
     `);
 });
 
